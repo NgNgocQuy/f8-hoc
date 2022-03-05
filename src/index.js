@@ -2,7 +2,7 @@ const express = require("express")
 const morgan = require("morgan")
 const handlebars = require("express-handlebars")
 const path = require("path")
-const port = process.env.port || 3000
+const port = process.env.PORT || 3000
 const route = require ("./routes")
 const bodyParser = require("body-parser")
 
@@ -32,4 +32,4 @@ app.use(bodyParser.urlencoded({extended:true}))
 // route init
 route(app)
 
-app.listen(port, () => console.log("local host 3000"))
+app.listen(port, () => console.log("local host"))
