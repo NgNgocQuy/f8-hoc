@@ -1,0 +1,63 @@
+{{!-- <div class="container">
+    <h1>CONTAINER</h1> --}}
+<div class="row d-flex flex-wrap justify-content-between bg-white">
+    {{!-- profile --}}
+    <div class="col-12">
+        <h1>aa</h1>
+    </div>
+    <div class="col-4">
+        
+    </div>
+    {{!-- Projects --}}
+    <div class="col-8">
+        <hr>
+        <h2 class="text-secondary"> Projects , Course,..</h2>
+        {{#each projects}}
+            <hr style="color: white;height: 0.2rem; opacity:1;">
+            <div class="card" style="padding: 2rem 1rem 2rem 1rem ;">
+                <div class="d-flex justify-content-around">
+                    <div class="col-4 hover_card" >
+                        <img class="card-img-top" src="{{this.Image}}" alt="" style="">
+                    </div>
+                    <div class="col-7">
+                        <div class="card-body"style=" border-radius: 4px;
+                            border-right: 2px solid grey ; border-top: 2px solid grey ;
+                            ">
+                            <h4 class="card-title text-secondary">{{this.Name}}
+                                <a class="text-secondary" title="click to website."
+                                    href="{{this.Link}}" target="_blank">
+                                    <i class="fa-solid fa-angles-right" style="margin-left:5rem;"></i>
+                                </a>
+                            </h4>
+                            <a class="" href="'{{project.Github}}'">
+                                <h5 class="card-text text-secondary" style="margin-left:2rem;">GITHUB 
+                                    <i class="fa-solid fa-angles-right" style="margin-left:5.5rem;"></i>
+                                </h5>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="card-body"style=" border-radius: 4px;
+                            border-left: 2px solid grey ; border-bottom: 2px solid grey ;
+                            ">
+                            <p>{{{this.Status}}}</p>
+                            <p>{{{this.Decription}}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+    <div class="card">
+        <a href="">
+            <img class="card-img-top" src="ayaka.jpg" alt="" style="max-width: 200px; max-height: 200px;">
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+    
+{{!--     
+</div> --}}

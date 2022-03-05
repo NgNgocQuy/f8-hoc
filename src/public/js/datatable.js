@@ -1,0 +1,1 @@
+new Datatable(element, data, {color: "blue-grey-dark", borderColor: "light", loaderClass: "bg-danger", dark: true})

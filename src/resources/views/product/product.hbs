@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="css/datatable.css">
+<div class="container">
+    <div class="datatable" data-mdb-color="blue-grey-dark" 
+        data-mdb-border-color="light" data-mdb-loader-class="bg-danger" data-mdb-dark="true">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">name</th>
+                    <th scope="col">Position</th>
+                    <th scope="col">Office</th>
+                    <th scope="col">age</th>
+                    <th scope="col">Start Date</th>
+                    <th scope="col">Salary</th>
+                </tr>
+            </thead>
+            <tbody style="">
+            {{#each productDocs}}
+                <tr>
+                    <th scope="row">1</th>
+                    <td>{{ this.Name}}</td>
+                    <td>{{ this.Position}}</td>
+                    <td>{{ this.Office}}</td>
+                    <td>{{ this.Age}}</td>
+                    <td>{{ this.Startdate}}</td>
+                    <td>{{ this.Salary}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="js/datatable.js"></script>
