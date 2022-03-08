@@ -10,7 +10,7 @@ class mainController{
         try {
             let projects = await project.find()
             projects = projects.map(projects => projects.toObject())
-            console.log(projects);
+            // console.log(projects);
             res.render("home", {projects}) 
         } catch (error) {
             res.send("status: err")

@@ -1,0 +1,81 @@
+#Projects{
+}
+
+.project_title{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin: auto;
+}
+.project_title>*{
+    font-weight: 500;
+    text-align: center;
+}
+
+/* ----------------------------------------- */
+.project_card{
+    margin: 20px 0px 20px 0px;
+    width: 500px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    border: none;
+}
+.project_card:hover{
+    animation-delay: 0.5s;
+    transition: 0.5s;
+    margin: 0px;
+    width: 571px;
+    height: 320px;
+}
+
+.project_card_title{
+    bottom: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    opacity: 1 !important;
+    transition: 0.5s;
+}
+
+.project_card_body{
+    /* visibility: hidden; */
+    color: white;
+    width: 571px;
+    height: 320px;
+    transition: 0.5s;
+    opacity: 0;
+    background-color: #00070c;
+}
+.project_card_body:hover{
+    /* visibility: inherit; */
+    opacity: 0.9;
+    width: 571px;
+    min-height: 320px;
+
+}
+.project_card_body:hover .project_card_title{
+    transition: 0.5s;
+    opacity: 0;
+}
+.project_card_link_page{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    outline: none;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+.project_card_link_github{
+    position: absolute;
+    right: 22px;
+    top: 40px;
+    outline: none;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+.project_card_link:hover{
+    color:rgb(240, 255, 104);
+    transition: 0.5s;
+}

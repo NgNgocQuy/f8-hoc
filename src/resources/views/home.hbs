@@ -1,62 +1,139 @@
 {{!-- <div class="container">
     <h1>CONTAINER</h1> --}}
-<div class="row d-flex flex-wrap justify-content-between bg-white">
-    {{!-- profile --}}
-    <div class="col-12">
-        <h1>aa</h1>
+<div class=" d-flex flex-wrap justify-content-around bg-white">
+    <div class="col-12 vertical_range-5"></div>
+    {{!-- about --}}
+    <div class="col-12 d-flex justify-content-around flex-row-reverse abouts">
+        <div class="col-4 about_title">
+            <h1 class="title">about</h1>
+        </div>
+        <div class="col-8 d-flex justify-content-center">
+            <div class="col-3 card about_card">
+                <div class="card-body">
+                    <p class="card-text">8/2018 - now </p>
+                    
+                </div>
+            </div>
+            <div class="col-3 card about_card">
+                <div class="card-body">
+                    <p class="card-text"><i class="fa-solid fa-user"></i>&nbsp Nguyen Ngoc Quy</p>
+                    <p class="card-text"><i class="fa-solid fa-cake-candles"></i>&nbsp 23/09/2000</p>
+                    <p class="card-text"><i class="fa-solid fa-phone"></i>&nbsp 0338991037</p>
+                    <p class="card-text"><i class="fa-solid fa-envelope"></i>&nbsp ngocquy.k171020@gmail.com</p>
+                    <p class="card-text"><i class="fa-brands fa-facebook-square"></i>&nbsp facebook.com/100008758051204</p>
+                    <p class="card-text"><i class="fa-solid fa-flag"></i>&nbsp Minh Khai - Vu Thu - Thai Binh</p>
+                </div>
+            </div>
+            <div class="col-3 card about_card">
+                <div class="card-body">
+                    <p class="card-text">&nbsp Được sinh ra và lớn lên tại Thái Bình. Hiện
+                        tại đang là sinh viên học bằng cử nhân
+                        tại Industrial University of Ho Chi Minh
+                        city. <br>
+                        &nbsp Trong thời gian học tập tại trường,
+                        được đào tạo nhiều ngôn ngữ như java,
+                        php, javascript, python... Tuy nhiên
+                        javascrip đem lại nhiều hứng thú hơn cả.<br>
+                        &nbsp Tuy nhiên "muốn đi nhanh thì đi một mình,
+                        muốn đi xa thì đi cùng nhau".
+                        Do đó, em muốn tìm kiếm một công việc
+                        vừa có thể áp dụng kiến thức đã có từ
+                        trường đại học và có thể phát triển bản thân.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-4">
+    {{!-- about --}}
+    <div class="col-12 vertical_range-5"></div>
+    <!--skills-->
+    <div class="col-12 d-flex justify-content-around skills" id="skills">
         
-    </div>
-    {{!-- Projects --}}
-    <div class="col-8">
-        <hr>
-        <h2 class="text-secondary"> Projects , Course,..</h2>
-        {{#each projects}}
-            <hr style="color: white;height: 0.2rem; opacity:1;">
-            <div class="card" style="padding: 2rem 1rem 2rem 1rem ;">
-                <div class="d-flex justify-content-around">
-                    <div class="col-4 hover_card" >
-                        <img class="card-img-top" src="{{this.Image}}" alt="" style="">
+        <div class="col-3 skills_title">
+        <h1 class="title"><i class="fa-solid fa-cog fa-spin"></i>&nbsp SKILLS</h1>
+        </div>
+        <div class="col-9 d-flex justify-content-center animate__animated animate__delay-05s">
+            <div class="">
+                <div class="card skill_card animate__animated animate__fadeInRight animate__fast " >
+                    <div class="card-body skill_card_body">
+                        <h4 class="card-title skill_card_title">CODE</h4>
+                        <p class="card-text skill_card_text animate__animated animate__fadeInDown animate__delay-03s animate__fast">Javascript: có khả năng làm việc với ES5, ES6</p>
+                        <p class="card-text skill_card_text animate__animated animate__fadeInDown animate__delay-03s animate__fast">Node.js: có khả năng làm việc với framework: Express.js</p>
+                        <p class="card-text skill_card_text animate__animated animate__fadeInDown animate__delay-03s animate__fast">Có kinh nghiệm với tempate engine: Hbs,Ejs</p>
+                        <p class="card-text skill_card_text animate__animated animate__fadeInDown animate__delay-03s animate__fast">Có kink nghiệm về : HTML, CSS, JS</p>
                     </div>
-                    <div class="col-7">
-                        <div class="card-body"style=" border-radius: 4px;
-                            border-right: 2px solid grey ; border-top: 2px solid grey ;
-                            ">
-                            <h4 class="card-title text-secondary">{{this.Name}}
-                                <a class="text-secondary" title="click to website."
-                                    href="{{this.Link}}" target="_blank">
-                                    <i class="fa-solid fa-angles-right" style="margin-left:5rem;"></i>
-                                </a>
-                            </h4>
-                            <a class="" href="'{{project.Github}}'">
-                                <h5 class="card-text text-secondary" style="margin-left:2rem;">GITHUB 
-                                    <i class="fa-solid fa-angles-right" style="margin-left:5.5rem;"></i>
-                                </h5>
+                </div>
+            </div>
+            <div class="">
+                <div class="card skill_card animate__animated animate__fadeInRight animate__slow " >
+                    <div class="card-body skill_card_body">
+                        <h4 class="card-title skill_card_title">DATABASE</h4>
+                        <p class="card-text skill_card_text animate__animated animate__fadeInDown animate__delay-07s animate__slow">Có khả năng làm việc với : Mongodb</p>
+                        <p class="card-text skill_card_text animate__animated animate__fadeInDown animate__delay-07s animate__slow">Có kiến thức về : SQL Server</p>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card skill_card animate__animated animate__fadeInRight animate__slower " >
+                    <div class="card-body skill_card_body">
+                        <h4 class="card-title skill_card_title">VERSION CONTROL</h4>
+                        <p class="card-text skill_card_text animate__animated animate__fadeInDown animate__delay-03s animate__slower">Có khả năng làm việc với: GIT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--skills-->
+        
+    <div class="col-12 vertical_range-4"></div>
+    <div class="col-12 vertical_range-4 bg_color_aliceblue"></div>
+    
+    
+    {{!-- Projects --}}
+    <div class="col-12 d-flex justify-content-around bg_color_aliceblue" id="Projects">
+
+        <div class="col-9 d-flex justify-content-start">
+        
+
+            {{!-- <hr style="color: white;height: 0.2rem; opacity:1;"> --}}
+            
+        {{#each projects}}
+            {{!-- <hr style="color: white;height: 0.2rem; opacity:1;"> --}}
+            <div class="card project_card" style="background-image: url('{{this.Image}}');">
+                
+                <div class="d-flex justify-content-around">
+                    <div class="card-body project_card_body">
+                        <h4 class="project_card_title">{{this.Name}}</h4>
+
+                            <a class="project_card_link_page" title="" href="{{this.Link}}" 
+                                target="_blank"> VIEW FULL PAGE..
                             </a>
-                        </div>
-                        <br>
-                        <div class="card-body"style=" border-radius: 4px;
-                            border-left: 2px solid grey ; border-bottom: 2px solid grey ;
-                            ">
-                            <p>{{{this.Status}}}</p>
+                            
+                            <a class="project_card_link_github" href="{{project.Github}}"
+                                target="_blank"> GITHUB 
+                            </a>
+                        <div>
+                            <div class="col-12 vertical_range-1"></div>
+                            <h5>{{{this.Status}}}</h5>
+                            
                             <p>{{{this.Decription}}}</p>
                         </div>
                     </div>
                 </div>
             </div>
         {{/each}}
-    </div>
-    <div class="card">
-        <a href="">
-            <img class="card-img-top" src="ayaka.jpg" alt="" style="max-width: 200px; max-height: 200px;">
-            <div class="card-body">
-                <h4 class="card-title">Title</h4>
-                <p class="card-text">Text</p>
+            <div class="card project_card" style="background-image: url('bg2.png');">
+                <h3 class="text_color_white">&nbsp updating</h3>
             </div>
-        </a>
-    </div>
 
+        </div>
+        <div class="col-3 text-secondary project_title">
+            <h1 class=""> Projects , Course,..</h1>
+        </div>
+    </div>
+    <!-- project -->
+     
 </div>
     
 {{!--     

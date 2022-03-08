@@ -1,3 +1,43 @@
 .my-main{
     min-height: 750px;
 }
+
+*{
+    /* border: solid 1px green !important; */
+}
+header{
+    z-index: .9;
+}
+/* color bg */
+.bg_color_aliceblue{
+    background-color: aliceblue;
+}
+/* -------- */
+
+/* title */
+.title{
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* ----- */
+
+/* color text */
+.text_color_white{
+    color: white;
+}
+/* ---------- */
+.vertical_range-1{
+    height: 20px;
+}
+.vertical_range-2{
+    height: 40px;
+}
+.vertical_range-3{
+    height: 60px;
+}
+.vertical_range-4{
+    height: 80px;
+}
+.vertical_range-5{
+    height: 100px;
+}
