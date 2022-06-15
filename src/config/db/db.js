@@ -6,7 +6,7 @@ async function connect() {
     // await mongoose.connect('mongodb://localhost:27017/datatest');
     console.log("connect success mongodb");
   } catch (error) {
-    cconsole.log("connect fail");
+    console.log("connect fail");
   }
 }
 //xJWcQ5lZXqgaumhs
