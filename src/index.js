@@ -32,4 +32,4 @@ app.use(bodyParser.urlencoded({extended:true}))
 // route init
 route(app)
 
-app.listen(port, () => console.log("local host"))
+app.listen(port, () => console.log("host: ",port))
