@@ -1,5 +1,4 @@
 const express = require("express")
-const morgan = require("morgan")
 const handlebars = require("express-handlebars")
 const path = require("path")
 const port = process.env.PORT || 3000
